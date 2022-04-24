@@ -34,3 +34,22 @@ data-x-afterslideload	横向滚动后显示的当前页面index 从0开始	2<br>
 按钮点击事件名称，页面可以添加两个按钮 id分别为 moveSectionUp 和 moveSectionDown<br>
 往上滚动的事件名称   moveSectionUp<br>
 往下滚动的事件名称   moveSectionDown<br>
+3、注意页面细节样式<br>
+如需设置pagination当前激活页小圆点颜色，需要在样式类文件中添加如下样式类<br>
+如果将小小圆点设置在页面底部位置设置位置样式<br>
+#fp-nav.right竖向小圆点右边位置类名<br>
+#fp-nav.left 竖向小圆点左边位置类名<br>
+`.fp-slidesNav .bottom{bottom:20px;}`<br>
+如果更改小圆点背景颜色可以设置样式<br>
+`#fp-nav ul li a span, .fp-slidesNav ul li a span{background:#f00;}`<br>
+#fp-nav ul li a span 这个是设置竖向小圆点类名<br>
+.fp-slidesNav ul li a span 这个是横向小圆点类名<br>
+4、可以放视频元素案例,也可以使用如下代码<br>
+```html
+<div class="section">
+      <video width="400" controls muted data-autoplay loop>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+  </div>
+```
